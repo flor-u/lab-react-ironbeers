@@ -5,8 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Home from "./components/Home";
 import List from "./components/List";
 import NavBar from "./components/NavBar";
-import OneBeer from "./components/OneBeer";
-import RandomBeer from "./components/RandomBeer";
+import Card from "./components/Card";
 
 class App extends Component {
   render() {
@@ -29,17 +28,17 @@ class App extends Component {
           />
           <Route
             exact
-            path='/:beerID'
+            path='/beers/:beerID'
             render={(props) => {
               let chosenBeer = props.match.params.beerID;
-              return <OneBeer beerID={chosenBeer}></OneBeer>;
+              return <Card beerID={chosenBeer}></Card>;
             }}
           />
           <Route
             exact
             path='/random-beer'
             render={() => {
-              return <RandomBeer></RandomBeer>;
+              return <Card></Card>;
             }}
           />
           <Route

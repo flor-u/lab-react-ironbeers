@@ -33,7 +33,7 @@ return (
     </div>
     <div className="col-md-8">
       <div className="card-body">
-      <Link to={"/"+beer._id}><h5 className="card-title">{beer.name}</h5></Link>
+      <Link to={"/beers/"+beer._id}><h5 className="card-title">{beer.name}</h5></Link>
         <p className="card-text">{beer.tagline}</p>
         <p className="card-text"><small className="text-muted">{beer.contributed_by}</small></p>
       </div>

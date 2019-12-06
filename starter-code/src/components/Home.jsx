@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
       <React.Fragment>
         <Hero src='./images/beers.png' title='All Beers' text={text} where={'beers'}></Hero>
-        <Hero src='./images/random-beer.png' title='Random Beer' text={text} where={'random'}></Hero>
+        <Hero src='./images/random-beer.png' title='Random Beer' text={text} where={'random-beer'}></Hero>
         <Hero src='./images/new-beer.png' title='New Beer' text={text} where={'new-beer'}></Hero>
       </React.Fragment>
     );
